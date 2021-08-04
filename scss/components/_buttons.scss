@@ -1,0 +1,31 @@
+@use'../abstracts'as *;
+/* buttons */
+.btn {
+  cursor: pointer;
+  color: $white;
+  background: $textColor;
+  border: transparent;
+  border-radius: $borderRadius;
+  letter-spacing: $letterSpacing;
+  padding: 0.375rem 0.75rem;
+  box-shadow:$shadow-1;
+  transition:$transition;
+  text-transform: capitalize;
+  display: inline-block;
+
+  &:hover {
+    background: darken($textColor, 5);
+    box-shadow: $shadow-3;
+  }
+  &-hipster {
+    color: $veryDarkGrayishBlue;
+    background: $yellow;
+    &:hover {
+      color: $textColor;
+      background: darken($yellow,5);
+    }
+  }
+  &-block {
+    width: 100%;
+  } /*block class is good with forms*/
+}

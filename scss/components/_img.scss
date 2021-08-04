@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+
+/* images */
+.imgContainer {
+  width: 40vw;
+  max-width:$maxWidth;
+  border-radius:$borderRadius;
+
+  .img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+/* titles */
+
+.title {
+  text-align: center;
+}
+
+.title-underline {
+  background: $softRed;
+  width: 7rem;
+  height: 0.25rem;
+  margin: 0 auto;
+  margin-top: -1rem;
+}
+

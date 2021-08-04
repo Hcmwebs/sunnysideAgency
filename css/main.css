@@ -1,0 +1,144 @@
+/* Typography*/
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+/* === Primary === */
+/* === Neutrals === */
+html {
+  font-size: 112.5%;
+}
+
+/*18px*/
+body {
+  display: grid;
+  place-items: center;
+  background: white;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  line-height: 1.75;
+  color: #23303e;
+}
+
+p {
+  max-width: 36em;
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+  margin-bottom: 1.38rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  line-height: 1.3;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text-small {
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* buttons */
+.btn {
+  cursor: pointer;
+  color: white;
+  background: #23303e;
+  border: transparent;
+  border-radius: 0.22rem;
+  letter-spacing: 1px;
+  padding: 0.375rem 0.75rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease-in-out all;
+  text-transform: capitalize;
+  display: inline-block;
+  /*block class is good with forms*/
+}
+.btn:hover {
+  background: #1a232d;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.btn-hipster {
+  color: #5a636c;
+  background: #fad400;
+}
+.btn-hipster:hover {
+  color: #23303e;
+  background: #e0bf00;
+}
+.btn-block {
+  width: 100%;
+}
+
+/* titles */
+.title {
+  text-align: center;
+}
+
+.title-underline {
+  background: #fe7867;
+  width: 7rem;
+  height: 0.25rem;
+  margin: 0 auto;
+  margin-top: -1rem;
+}
+
+/* images */
+.imgContainer {
+  width: 40vw;
+  max-width: 1120px;
+  border-radius: 0.22rem;
+}
+.imgContainer .img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* attributions */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  max-width: 1120px;
+}
+
+/*# sourceMappingURL=main.css.map */
