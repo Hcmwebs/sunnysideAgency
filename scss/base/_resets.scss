@@ -1,5 +1,5 @@
 @use '../abstracts' as *;
-@use'./typo' as *;
+@use './typo' as *;
 @use '../layout/' as *;
 @use '../components' as *;
 *,
@@ -7,8 +7,7 @@
 ::before {
   box-sizing: border-box;
 }
-.container{
+.container {
   width: 90%;
-  max-width:$maxWidth;
-
+  max-width: $maxWidth;
 }
