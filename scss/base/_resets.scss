@@ -1,5 +1,6 @@
 @use '../abstracts' as *;
 @use'./typo' as *;
+@use '../layout/' as *;
 @use '../components' as *;
 *,
 ::after,
@@ -9,4 +10,5 @@
 .container{
   width: 90%;
   max-width:$maxWidth;
+
 }

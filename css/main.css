@@ -65,6 +65,29 @@ ul {
   padding: 0;
 }
 
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+}
+
+.main {
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+}
+.main .section {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: salmon;
+}
+
+.footer {
+  width: 100%;
+  min-height: 50vh;
+  background-color: cyan;
+}
+
 /* buttons */
 .btn {
   cursor: pointer;
