@@ -1,28 +1,32 @@
-
 @use '../abstracts/' as *;
 
 /* Typography*/
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
 
-html {font-size: 112.5%;} /*18px*/
+html {
+  font-size: 112.5%;
+} /*18px*/
 
 body {
-  @include grid(center);
-  background:$white;
+  width: 100vw;
+  background: $white;
   font-family: $bodyFont;
   font-weight: 600;
   line-height: 1.75;
-  color:$textColor;
+  color: $textColor;
 }
 
 p {
   max-width: 36em;
   margin-bottom: 1rem;
-
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin-top: 0;
   margin-bottom: 1.38rem;
   font-family: $headingFont;
@@ -56,10 +60,10 @@ small,
   font-size: $smallText;
 }
 
-a{
+a {
   text-decoration: none;
 }
-ul{
+ul {
   list-style-type: none;
   padding: 0;
 }
