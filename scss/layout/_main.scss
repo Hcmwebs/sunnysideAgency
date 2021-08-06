@@ -1,11 +1,12 @@
 @use '../abstracts'as *;
 
 .main {
+  width: 100%;
   @include grid(center);
   gap: 2rem;
 
   .section {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     background-color: salmon;
   }
