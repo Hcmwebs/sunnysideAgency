@@ -1,3 +1,6 @@
+
+/* nav */
+
 @use '../abstracts' as *;
 
 .nav {
@@ -11,14 +14,14 @@
     width: 24px;
     min-height: 1rem;
     color: $white;
+    cursor: pointer;
     transition: $transition-2;
 
     &.open {
       opacity: 0.4;
 
-      .navbar {
-        @include flex(column, center, center);
-        transform: translateX(0);
+      .navbar{
+        right: 30px;
       }
     }
   }
@@ -33,9 +36,11 @@
     @include flex(column, center, center);
     position: absolute;
     top: 106px;
-    transform: translateX(120%);
+    right: -100%;
+    cursor: pointer;
     background-color: $white;
-    display: none;
+    transition:$transition-2;
+
 
     &::before {
       content: '';

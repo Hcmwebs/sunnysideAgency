@@ -133,6 +133,7 @@ ul {
   color: #3e52a3;
 }
 
+/* nav */
 .nav {
   width: 100%;
   padding: 1.6rem 1.3rem;
@@ -147,17 +148,14 @@ ul {
   width: 24px;
   min-height: 1rem;
   color: white;
+  cursor: pointer;
   transition: 0.8s ease-in-out all;
 }
 .nav .hamburger.open {
   opacity: 0.4;
 }
 .nav .hamburger.open .navbar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transform: translateX(0);
+  right: 30px;
 }
 .nav .logoContainer {
   width: 125px;
@@ -172,9 +170,10 @@ ul {
   align-items: center;
   position: absolute;
   top: 106px;
-  transform: translateX(120%);
+  right: -100%;
+  cursor: pointer;
   background-color: white;
-  display: none;
+  transition: 0.8s ease-in-out all;
 }
 .nav .navbar::before {
   content: "";
