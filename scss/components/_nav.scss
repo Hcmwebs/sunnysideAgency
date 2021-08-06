@@ -1,0 +1,80 @@
+@use '../abstracts' as *;
+
+.nav {
+  width: 100%;
+  padding: 1.6rem 1.3rem;
+  background-color: #333;
+  position: fixed;
+  @include flex(row-reverse, space-between, center);
+
+  .hamburger {
+    width: 24px;
+    min-height: 1rem;
+    color: $white;
+    transition: $transition-2;
+
+    &.open {
+      opacity: 0.4;
+
+      .navbar {
+        @include flex(column, center, center);
+        transform: translateX(0);
+      }
+    }
+  }
+  .logoContainer {
+    width: 125px;
+    height: 24px;
+  }
+
+  .navbar {
+    width: 329px;
+    height: 305px;
+    @include flex(column, center, center);
+    position: absolute;
+    top: 106px;
+    transform: translateX(120%);
+    background-color: $white;
+    display: none;
+
+    &::before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-bottom: 24px solid $white;
+      border-left: 24px solid transparent;
+      position: absolute;
+      top: -23px;
+      right: 0;
+    }
+
+    li {
+      width: 80%;
+      @include flex(row, center, start);
+      padding: 0.375rem 0.75rem;
+      transition: $transition-2;
+
+      a {
+        width: 100%;
+        max-width: 150px;
+        display: inline-block;
+        text-transform: capitalize;
+        text-align: center;
+        color: $darkGrayishBlue;
+        padding: 0.375rem 0.75rem;
+      }
+
+      &:hover a {
+        font-family: $headingFont;
+        font-weight: $headingBold;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.11px;
+        background-color: $yellow;
+        color: $textColor;
+        text-transform: uppercase;
+        border-radius: $borderRadius-2;
+      }
+    }
+  }
+}
