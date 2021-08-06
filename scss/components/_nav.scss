@@ -19,10 +19,6 @@
 
     &.open {
       opacity: 0.4;
-
-      .navbar{
-        right: 30px;
-      }
     }
   }
   .logoContainer {
@@ -36,10 +32,14 @@
     @include flex(column, center, center);
     position: absolute;
     top: 106px;
-    right: -100%;
+    right:-100%;
     cursor: pointer;
     background-color: $white;
     transition:$transition-2;
+
+    &.open{
+      right:30px;
+    }
 
 
     &::before {
@@ -69,7 +69,8 @@
         padding: 0.375rem 0.75rem;
       }
 
-      &:hover a {
+      &:hover a,
+      &:active a {
         font-family: $headingFont;
         font-weight: $headingBold;
         font-size: 15px;
