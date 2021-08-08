@@ -1,5 +1,8 @@
 const hamburger = document.getElementById('hamburger');
 const navBar = document.getElementById('navbar');
+const navLinks = navBar.querySelectorAll('li a');
+
+
 
 
 
@@ -17,11 +20,12 @@ navBar.addEventListener('click', () => {
 
 
 // === === adding class active to the nav links
-const navLinks = navBar.querySelectorAll('li a');
-navLinks.forEach(link => link.addEventListener('click', (e) => {
-e.target.classList.add('active');
-}));
+const linkClicked = (e) => {
+  navLinks.forEach(link => link.classList.remove('active'))
+  navLinks.forEach(link => e.target.classList.add('active'))
+};
+
+navLinks.forEach(link => link.addEventListener('click', linkClicked));
 
 
 
-// === === removing class active to the nav links
