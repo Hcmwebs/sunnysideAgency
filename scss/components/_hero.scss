@@ -1,0 +1,21 @@
+@use '../abstracts' as *;
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  @include flex(column,center,center);
+  background-color: #fff;
+
+  &__header{
+    
+  }
+  &__body{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    inset: 0;
+  }
+
+
+
+}
