@@ -242,6 +242,22 @@ ul {
   }
 }
 
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.hero__body {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  inset: 0;
+}
+
 .header {
   width: 100%;
   height: 100vh;
