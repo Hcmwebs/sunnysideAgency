@@ -5,7 +5,6 @@
 .nav {
   width: 100%;
   padding: 1.6rem 1.3rem;
-  background-color: #333;
   position: fixed;
   @include flex(row, space-between, center);
 
@@ -54,28 +53,30 @@
     li {
       width: 80%;
       @include flex(row, center, start);
-      transition: $transition-2;
 
-      &:hover {
-        font-family: $headingFont;
-        font-weight: $headingBold;
-        font-size: 15px;
-        line-height: 25px;
-        letter-spacing: -0.11px;
-        background-color: $yellow;
-        color: $textColor;
-        text-transform: uppercase;
-        border-radius: $borderRadius-2;
-      }
 
       a {
         width: 100%;
         max-width: 150px;
-        display: block;
-        text-transform: capitalize;
+        margin: 0.16rem;
+        display: inline-block;
         text-align: center;
         color: $darkGrayishBlue;
         padding: 0.375rem 0.75rem;
+        transition: $transition;
+
+        &:hover {
+          font-family: $headingFont;
+          font-weight: $headingBold;
+          font-size: 15px;
+          line-height: 25px;
+          letter-spacing: -0.11px;
+          background-color: $yellow;
+          color: $textColor;
+          text-transform: uppercase;
+          border-radius: $borderRadius-2;
+        }
+
       }
     }
   }
@@ -102,9 +103,34 @@
       flex-direction: row;
       right: 30px;
       top: 0;
+      background-color:transparent;
 
       &::before {
         display: none;
+      }
+
+      li{
+
+        a{
+          color:$white;
+
+          &.active{
+            font-family: $headingFont;
+            font-weight: $headingBold;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.11px;
+            text-transform: uppercase;
+            background-color: rgba(255,255,255, 0.25);
+          }
+
+          &:hover{
+            color:$textColor;
+            background-color: $white;
+
+          }
+        }
+
       }
     }
   }
