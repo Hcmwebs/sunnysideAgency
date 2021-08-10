@@ -16,14 +16,11 @@
   <body>
     <div class="container">
       <header class="header">
-        <div class="hero">
-          <div class="hero__header imgContainer">
-            <img
-              src="/images/desktop/image-header.jpg"
-              alt="hero image"
-              class="img"
-            />
-          </div>
+        <picture>
+          <source media="(min-width: 768px)" srcset="/images/desktop/image-header.jpg">
+          <source media="(max-width: 768px)" srcset="/images/mobile/image-header.jpg">
+          <img src="/images/desktop/image-header.jpg" alt="hero image">
+        </picture>
           <nav class="nav">
             <div class="logoContainer">
               <img src="images/logo.svg" alt="logo image" class="img" />
@@ -38,7 +35,7 @@
               <img src="/images/icon-hamburger.svg" alt="hamburger icon" />
             </div>
           </nav>
-          <div class="hero__body">
+          <div class="hero">
             <h1>We are creatives</h1>
           </div>
 

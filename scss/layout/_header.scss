@@ -7,4 +7,10 @@
   background-color: grey;
   position: relative;
   @include grid(center);
+
+  img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
 }
