@@ -117,7 +117,6 @@ ul {
 /* images */
 .imgContainer {
   max-width: 100%;
-  border-radius: 0.22rem;
 }
 .imgContainer .img {
   width: 100%;
@@ -274,7 +273,7 @@ ul {
   place-items: center;
 }
 .header picture {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
 }
 .header picture img {
