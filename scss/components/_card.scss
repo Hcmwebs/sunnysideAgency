@@ -1,0 +1,112 @@
+@use '../abstracts' as *;
+
+.card {
+  width: 100%;
+  height: 800px;
+  background-color: $white;
+  @include flex(column, space-between, center);
+
+  &__header {
+    width: 100%;
+    height: 312px;
+    @include grid(center);
+
+    .img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  &__body {
+    @include grid(center);
+    width: 100%;
+    padding: 3.5rem 1.3rem;
+    min-height: 309px;
+
+    &__text {
+      @include flex(column, center, center);
+      gap: 1.5rem;
+
+      h2 {
+        font-size: 32px;
+        letter-spacing: -0.23px;
+        margin-bottom: 0;
+        text-align: center;
+        text-transform: initial;
+      }
+
+      p {
+        text-align: center;
+        letter-spacing: -0.13px;
+        line-height: 30px;
+        color: $darkGrayishBlue;
+      }
+
+      .btn {
+        cursor: pointer;
+        font-family: $headingFont;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $textColor;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        outline: none;
+        position: relative;
+
+        &::before {
+          content: '';
+          width: 80%;
+          height: 10px;
+          position: absolute;
+          bottom: 8px;
+          background-color: $yellow;
+          opacity: 0.75;
+        }
+      }
+    }
+  }
+
+  &--omega {
+    .btn {
+      &::before {
+        background-color: $softRed;
+      }
+    }
+  }
+}
+
+@media (min-width: $largeScreen) {
+  .card {
+    flex-direction: row-reverse;
+    height: $fixedWidth;
+
+    &__header {
+      flex-basis: 50%;
+      height: 100%;
+    }
+    &__body {
+      flex-basis: 50%;
+      height: 100%;
+
+      &__text {
+        width: 445px;
+        align-items: start;
+
+        h2 {
+          text-align: left;
+        }
+        p {
+          text-align: left;
+        }
+      }
+    }
+
+    &--omega {
+      flex-direction: row;
+    }
+  }
+}
