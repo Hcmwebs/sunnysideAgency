@@ -298,6 +298,108 @@ ul {
     letter-spacing: 8.75px;
   }
 }
+.card {
+  width: 100%;
+  height: 800px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__header {
+  width: 100%;
+  height: 312px;
+  display: grid;
+  place-items: center;
+}
+.card__header .img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.card__body {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  padding: 3.5rem 1.3rem;
+  min-height: 309px;
+}
+.card__body__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.card__body__text h2 {
+  font-size: 32px;
+  letter-spacing: -0.23px;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: initial;
+}
+.card__body__text p {
+  text-align: center;
+  letter-spacing: -0.13px;
+  line-height: 30px;
+  color: #818498;
+}
+.card__body__text .btn {
+  cursor: pointer;
+  font-family: "Fraunces", serif;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #23303e;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  position: relative;
+}
+.card__body__text .btn::before {
+  content: "";
+  width: 80%;
+  height: 10px;
+  position: absolute;
+  bottom: 8px;
+  background-color: #fad400;
+  opacity: 0.75;
+}
+.card--omega .btn::before {
+  background-color: #fe7867;
+}
+
+@media (min-width: 1440px) {
+  .card {
+    flex-direction: row-reverse;
+    height: 600px;
+  }
+  .card__header {
+    flex-basis: 50%;
+    height: 100%;
+  }
+  .card__body {
+    flex-basis: 50%;
+    height: 100%;
+  }
+  .card__body__text {
+    width: 445px;
+    align-items: start;
+  }
+  .card__body__text h2 {
+    text-align: left;
+  }
+  .card__body__text p {
+    text-align: left;
+  }
+  .card--omega {
+    flex-direction: row;
+  }
+}
 .header {
   width: 100vw;
   min-height: 100vh;
@@ -316,7 +418,7 @@ ul {
   width: 100%;
   display: grid;
   place-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 .main .section {
   width: 100%;
