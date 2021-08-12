@@ -4,12 +4,11 @@
 .projects{
   width: 100%;
   height: 600px;
-  @include grid(center);
-  grid-template-columns: 1fr;
+  @include flex(column, space-between,center);
 
   .card{
     width: 375px;
-    height: 600px;
+    height: 100%;
     position: relative;
     @include grid(center);
     color: $graphicDesignText;
@@ -17,22 +16,22 @@
     &__header{
       width: 100%;
       height:100%;
-    }
+      position: relative;
 
-    &__body{
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 27%;
-      border:5px dashed red;
 
       &__text{
-        height: fit-content;
+        max-width: 340px;
+        max-height: fit-content;
+        padding: 0 1.3rem;
+        text-align: center;
+        position: absolute;
+        top:63%;
 
         h2{
           font-size: 28px;
           letter-spacing: -0.2px;
           line-height: 100%;
+
         }
 
         p{
@@ -43,21 +42,23 @@
       }
     }
 
+    &--omega {
+      color:$photographyText;
+    }
+
+
+
   }
+
 }
 @media(min-width: $largeScreen){
   .projects{
-    grid-template-columns:
-  repeat(2, 1fr);
+    flex-direction: row-reverse;
 
     .card{
       width: 720px;
     }
 
   }
-
-
-
-
 
 }
