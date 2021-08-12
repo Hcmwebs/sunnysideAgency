@@ -1,19 +1,63 @@
-@use'../abstracts'as *;
+@use'../abstracts/' as *;
 @use '../components/' as *;
 
 .projects{
   width: 100%;
   height: 600px;
+  @include grid(center);
+  grid-template-columns: 1fr;
 
   .card{
-    height: 100%;
+    width: 375px;
+    height: 600px;
     position: relative;
+    @include grid(center);
+    color: $graphicDesignText;
 
     &__header{
       width: 100%;
       height:100%;
+    }
 
+    &__body{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 27%;
+      border:5px dashed red;
+
+      &__text{
+        height: fit-content;
+
+        h2{
+          font-size: 28px;
+          letter-spacing: -0.2px;
+          line-height: 100%;
+        }
+
+        p{
+          font-size: 16px;
+          letter-spacing: -0.11px;
+          line-height: 27px;
+        }
+      }
     }
 
   }
+}
+@media(min-width: $largeScreen){
+  .projects{
+    grid-template-columns:
+  repeat(2, 1fr);
+
+    .card{
+      width: 720px;
+    }
+
+  }
+
+
+
+
+
 }

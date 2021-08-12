@@ -21,7 +21,7 @@
             <img src="images/logo.svg" alt="logo image" class="img" />
           </div>
           <ul class="navbar" id="navbar">
-            <li><a href="index.html">Home</a>About</a></li>
+            <li><a href="index.html">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact" class="active">Contact</a></li>
@@ -44,7 +44,7 @@
         </div>
       </header>
       <main class="main">
-        <section class="section" id="services">
+        <section class="section services" id="services">
           <div class="card">
             <div class="card__header">
               <img
@@ -90,10 +90,23 @@
             </div>
           </div>
         </section>
-        <section class="section" id = 'projects'>
+        <section class="section projects" id = 'projects'>
           <div class="card">
-            <div class="card__header"></div>
-            <div class="card__body"></div>
+            <div class="card__header">
+              <picture>
+                <source media="(min-width:1440px )" srcset="/images/desktop/image-graphic-design.jpg">
+                <source media="(min-width:375px )" srcset="/images/mobile/image-graphic-design.jpg">
+                <img src="/images/mobile/image-graphic-design.jpg" alt=" graphic design image" class="img">
+              </picture>
+            </div>
+            <div class="card__body">
+              <div class="card__body__text">
+                <h2>Graphic design</h2>
+                <p>Great design makes you memorable. We deliver artwork that underscores your
+                  brand message and captures potential clients’ attention.</p>
+              </div>
+
+            </div>
           </div>
         </section>
         <section class="section">section</section>
@@ -102,7 +115,7 @@
       </main>
       <footer class="footer">hsshhs</footer>
     </div>
-     Graphic design
+
     Great design makes you memorable. We deliver artwork that underscores your
     brand message and captures potential clients’ attention. Photography
     Increase your credibility by getting the most stunning, high-quality photos

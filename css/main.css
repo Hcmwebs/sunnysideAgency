@@ -118,7 +118,8 @@ ul {
 .imgContainer {
   max-width: 100%;
 }
-.imgContainer .img {
+
+.img {
   width: 100%;
   display: block;
   object-fit: cover;
@@ -414,15 +415,61 @@ ul {
     background-image: url(/images/desktop/image-header.jpg);
   }
 }
+.projects {
+  width: 100%;
+  height: 600px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+}
+.projects .card {
+  width: 375px;
+  height: 600px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  color: #25564b;
+}
+.projects .card__header {
+  width: 100%;
+  height: 100%;
+}
+.projects .card__body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 27%;
+  border: 5px dashed red;
+}
+.projects .card__body__text {
+  height: fit-content;
+}
+.projects .card__body__text h2 {
+  font-size: 28px;
+  letter-spacing: -0.2px;
+  line-height: 100%;
+}
+.projects .card__body__text p {
+  font-size: 16px;
+  letter-spacing: -0.11px;
+  line-height: 27px;
+}
+
+@media (min-width: 1440px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects .card {
+    width: 720px;
+  }
+}
 .main {
   width: 100%;
   display: grid;
   place-items: center;
-  gap: 1.5rem;
 }
 .main .section {
   width: 100%;
-  min-height: 100vh;
   background-color: salmon;
 }
 
