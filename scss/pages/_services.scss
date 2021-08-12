@@ -1,1 +1,11 @@
 @use '../abstracts' as *;
+
+.services{
+  width: 100%;
+  @include flex(column, space-between, center);
+
+  .card{
+    max-width: 100%;
+  }
+
+}
