@@ -2,6 +2,7 @@
 
 .services{
   width: 100%;
+  height: 600px;
   @include flex(column, space-between, center);
 
   .card{
