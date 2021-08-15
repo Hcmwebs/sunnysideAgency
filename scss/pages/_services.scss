@@ -1,8 +1,7 @@
 @use '../abstracts' as *;
 
 .services{
-  width: 100%;
-  height: 600px;
+  min-height: 600px;
   @include flex(column, space-between, center);
 
 }
