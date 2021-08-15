@@ -3,7 +3,6 @@
 .card {
   width: 100%;
   max-width: 375px;
-  height: 800px;
   background-color: $white;
   @include flex(column, space-between, center);
 
