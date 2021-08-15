@@ -477,6 +477,20 @@ ul {
   align-items: center;
 }
 
+.testimonials {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.testimonials__header {
+  display: grid;
+  place-items: center;
+}
+.testimonials__body {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+}
 .main {
   width: 100%;
   display: grid;

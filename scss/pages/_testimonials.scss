@@ -1,2 +1,20 @@
 @use '../abstracts' as *;
 @use '../components/' as *;
+
+.testimonials{
+  width: 100%;
+  @include grid(center);
+
+  &__header{
+    @include grid(center);
+  }
+
+  &__body{
+    @include grid(center);
+    grid-template-columns: repeat(auto-fit, minmax(375px,1fr));
+
+    .card{
+      
+    }
+  }
+}
