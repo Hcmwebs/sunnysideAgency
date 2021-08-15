@@ -5,8 +5,4 @@
   height: 600px;
   @include flex(column, space-between, center);
 
-  .card{
-    max-width: 100%;
-  }
-
 }
