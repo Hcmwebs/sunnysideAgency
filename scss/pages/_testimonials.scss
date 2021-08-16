@@ -2,19 +2,92 @@
 @use '../components/' as *;
 
 .testimonials{
-  width: 100%;
+  min-height: 600px;
+  padding: 3.6rem 1.3rem;
   @include grid(center);
+  gap: $gap;
 
   &__header{
+    width: 100%;
     @include grid(center);
+
+    h2{
+      font-size: 16px;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      line-height: 100%;
+      letter-spacing:4px;
+      color: $grayishBlue;
+    }
+
   }
 
   &__body{
+    width: 100%;
     @include grid(center);
-    grid-template-columns: repeat(auto-fit, minmax(375px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(330px,1fr));
+    gap:$gap;
 
     .card{
-      
+      width: 327px;
+      min-height: 360px;
+      @include grid(center);
+      gap:$gap/2;
+
+      .imgContainer{
+        width: 72px;
+        height: 72px;
+
+        .img{
+            border-radius:50%
+          }
+      }
+
+      p{
+        text-align: center;
+        line-height: 32px;
+        letter-spacing: -0.13px;
+        color:$veryDarkGrayishBlue;
+      }
+      .profileInfo{
+        @include grid(center);
+        gap: 9px;
+
+        h3{
+          font-size: 1rem;
+          font-weight: $bodySemibold;
+          margin-bottom: 0;
+          line-height: 100%;
+          letter-spacing: -0.13px;
+          color:$veryDarkDesaturatedBlue;
+        }
+
+        small {
+          font-family:$bodyFont;
+          font-weight: $bodySemibold;
+          line-height: 25px;
+          letter-spacing: -0.1px;
+          color:$grayishBlue;
+        }
+      }
+
     }
   }
+}
+
+@media (min-width:$largeScreen){
+  .testimonials{
+    &__header{
+      h2{
+        font-size: 20px;
+        letter-spacing: 5px;
+
+      }
+    }
+    &__body{
+      max-width: 1100px;
+      gap:$gap/2;
+    }
+  }
+
 }
