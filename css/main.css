@@ -553,6 +553,27 @@ ul {
     gap: 32px;
   }
 }
+.gallery {
+  width: 100%;
+  height: 375px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(188px, 1fr));
+}
+.gallery .img {
+  width: 187px;
+  height: 187px;
+}
+
+@media (min-width: 1440px) {
+  .gallery {
+    height: 447px;
+  }
+  .gallery .img {
+    width: 360px;
+    height: 447px;
+  }
+}
 .main {
   width: 100%;
   display: grid;
