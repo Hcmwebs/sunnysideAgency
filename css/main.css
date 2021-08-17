@@ -305,7 +305,6 @@ ul {
 .card {
   width: 100%;
   max-width: 375px;
-  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -590,10 +589,26 @@ ul {
 
 .footer {
   width: 100%;
-  min-height: 50vh;
-  background-color: cyan;
+  min-height: 350px;
+  background-color: #458c7e;
+  display: grid;
+  place-items: center;
 }
-
+.footer .card {
+  max-width: 300px;
+  min-height: 206px;
+  flex-direction: column;
+}
+.footer .card .logoContainer {
+  width: 170px;
+  height: 33px;
+}
+.footer .card .logoContainer .img {
+  color: #458c7e;
+}
+.footer .card .logoContainer .img svg {
+  fill: currentColor;
+}
 *,
 ::after,
 ::before {
