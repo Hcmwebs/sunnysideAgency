@@ -4,6 +4,7 @@
 
 .nav {
   width: 100%;
+  max-width: $maxWidth;
   padding: 1.6rem 1.3rem;
   position: fixed;
   z-index: 9;
@@ -55,7 +56,6 @@
       width: 80%;
       @include flex(row, center, start);
 
-
       a {
         width: 100%;
         max-width: 150px;
@@ -77,7 +77,6 @@
           text-transform: uppercase;
           border-radius: $borderRadius-2;
         }
-
       }
     }
   }
@@ -104,34 +103,31 @@
       flex-direction: row;
       right: 30px;
       top: 0;
-      background-color:transparent;
+      background-color: transparent;
 
       &::before {
         display: none;
       }
 
-      li{
+      li {
+        a {
+          color: $white;
 
-        a{
-          color:$white;
-
-          &.active{
+          &.active {
             font-family: $headingFont;
             font-weight: $headingBold;
             font-size: 15px;
             line-height: 25px;
             letter-spacing: -0.11px;
             text-transform: uppercase;
-            background-color: rgba(255,255,255, 0.25);
+            background-color: rgba(255, 255, 255, 0.25);
           }
 
-          &:hover{
-            color:$textColor;
+          &:hover {
+            color: $textColor;
             background-color: $white;
-
           }
         }
-
       }
     }
   }

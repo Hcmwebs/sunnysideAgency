@@ -139,6 +139,7 @@ ul {
 /* nav */
 .nav {
   width: 100%;
+  max-width: 1440px;
   padding: 1.6rem 1.3rem;
   position: fixed;
   z-index: 9;
