@@ -11,11 +11,14 @@ html {
 /*18px*/
 body {
   width: 100vw;
-  background: white;
+  max-width: 1440px;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
   line-height: 1.75;
   color: #23303e;
+  background-color: white;
+  display: grid;
+  place-items: center;
 }
 
 p {
