@@ -590,25 +590,53 @@ ul {
 .footer {
   width: 100%;
   min-height: 350px;
-  background-color: #458c7e;
+  background-color: #98cdc2;
   display: grid;
   place-items: center;
 }
-.footer .card {
+.footer__container {
   max-width: 300px;
   min-height: 206px;
-  flex-direction: column;
+  display: grid;
+  place-items: center;
 }
-.footer .card .logoContainer {
-  width: 170px;
-  height: 33px;
+.footer__container nav {
+  max-width: 300px;
+  display: grid;
+  place-items: center;
 }
-.footer .card .logoContainer .img {
-  color: #458c7e;
+.footer__container nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
 }
-.footer .card .logoContainer .img svg {
-  fill: currentColor;
+.footer__container nav ul li a {
+  color: #25564b;
+  transition: 0.8s ease-in-out all;
 }
+.footer__container nav ul li a:hover {
+  color: white;
+}
+.footer__container .socialLinks {
+  max-width: 164px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  gap: 1rem;
+}
+.footer__container .socialLinks .img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  color: #25564b;
+  transition: 0.8s ease-in-out all;
+}
+.footer__container .socialLinks .img:hover {
+  color: white;
+}
+
 *,
 ::after,
 ::before {

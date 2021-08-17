@@ -7,28 +7,55 @@
   background-color: $footer;
   @include grid(center);
 
-  .card {
+  &__container{
     max-width: 300px;
     min-height: 206px;
-    flex-direction: column;
+    @include grid(center);
 
-    .logoContainer {
-      width: 170px;
-      height: 33px;
+    nav{
+      max-width:300px;
+      @include grid(center);
 
-      .img {
-        color: $footer;
+      ul{
+        @include flex(row,center,center);
+        gap:0.6rem;
 
-        svg {
-          fill: currentColor;
+        li{
+
+          a{
+            color: $graphicDesignText;
+            transition: $transition-2;
+
+            &:hover{
+              color:$white
+            }
+          }
         }
+
       }
+
     }
 
-    .nav {
-    }
+
 
     .socialLinks {
+      max-width: 164px;
+      @include grid(center);
+      grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+      gap: 1rem;
+
+      .img{
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        color:$graphicDesignText;
+        transition: $transition-2;
+
+        &:hover{
+          color:$white
+        }
+      }
+
     }
   }
 }
