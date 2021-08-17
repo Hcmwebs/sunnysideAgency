@@ -3,7 +3,6 @@
 .card {
   width: 100%;
   max-width: 375px;
-  background-color: $white;
   @include flex(column, space-between, center);
 
   &__header {
@@ -84,7 +83,7 @@
   .card {
     max-width: 1440px;
     flex-direction: row-reverse;
-    min-height:$fixedWidth;
+    min-height: $fixedWidth;
 
     &__header {
       flex-basis: 50%;
