@@ -11,7 +11,6 @@ html {
 /*18px*/
 body {
   width: 100vw;
-  max-width: 1440px;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
   line-height: 1.75;
