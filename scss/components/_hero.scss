@@ -3,9 +3,9 @@
 .hero {
   width: 100%;
   min-height: 100px;
-  @include flex(column, space-between, center);
+  @include flex(column, center, center);
   position: absolute;
-  top: 35%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -25,7 +25,7 @@
 
   &__imgContainer {
     position: absolute;
-    top: 200px;
+    top: 150px;
   }
 }
 
