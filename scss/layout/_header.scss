@@ -5,12 +5,14 @@
   width: 100%;
   min-height: 100vh;
   @include grid(center);
-  background: url(/images/mobile/image-header.jpg) no-repeat center center;
-  background-size: cover;
-}
 
-@media (min-width: $largeScreen) {
-  .header {
-    background-image: url(/images/desktop/image-header.jpg);
+  .imgContainer {
+    width:100%;
+    min-height:100vh;
+
+    .img{
+      position:relative;
+    }
   }
 }
+
