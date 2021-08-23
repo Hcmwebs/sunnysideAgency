@@ -145,7 +145,7 @@ ul {
 /* nav */
 .nav {
   width: 100%;
-  max-width: 1440px;
+  max-width: 375px;
   padding: 1.6rem 1.3rem;
   position: fixed;
   z-index: 9;
@@ -234,7 +234,11 @@ ul {
   text-transform: uppercase;
   border-radius: 1.6rem;
 }
+
 @media (min-width: 1440px) {
+  .nav {
+    max-width: 600px;
+  }
   .nav .hamburger {
     display: none;
   }
@@ -266,7 +270,6 @@ ul {
     background-color: white;
   }
 }
-
 .hero {
   width: 100%;
   min-height: 100px;
