@@ -16,6 +16,7 @@ body {
   color: $textColor;
   background-color: $white;
   @include grid(center);
+  scroll-behavior: smooth;
 }
 
 p {
