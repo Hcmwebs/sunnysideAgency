@@ -6,9 +6,15 @@
   font-size: 11px;
   text-align: center;
 
+
   a{
     font-weight: $headingBlack;
     color: hsl(228, 45%, 44%);
+    transition: $transition-2;
+
+    &:hover{
+      color:$white;
+    }
   }
 }
 

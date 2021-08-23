@@ -135,6 +135,10 @@ ul {
 .attribution a {
   font-weight: 900;
   color: #3e52a3;
+  transition: 0.8s ease-in-out all;
+}
+.attribution a:hover {
+  color: white;
 }
 
 /* nav */
