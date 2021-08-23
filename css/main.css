@@ -18,6 +18,7 @@ body {
   background-color: white;
   display: grid;
   place-items: center;
+  scroll-behavior: smooth;
 }
 
 p {
@@ -582,7 +583,7 @@ ul {
   }
 }
 .main {
-  width: 100%;
+  max-width: 375px;
   display: grid;
   place-items: center;
 }
@@ -590,6 +591,11 @@ ul {
   width: 100%;
 }
 
+@media (min-width: 1440px) {
+  .main {
+    max-width: 1440px;
+  }
+}
 .footer {
   width: 100%;
   min-height: 350px;

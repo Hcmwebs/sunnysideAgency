@@ -3,11 +3,17 @@
 @use '../components' as *;
 
 .main {
-  width: 100%;
+  max-width: 375px;
   @include grid(center);
 
 
   .section {
     width: 100%;
+  }
+}
+
+@media(min-width:$largeScreen){
+  .main{
+    max-width: 1440px;
   }
 }
