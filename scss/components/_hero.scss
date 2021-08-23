@@ -5,9 +5,9 @@
   min-height: 100px;
   @include flex(column, center, center);
   position: absolute;
-  top: 25%;
+  top: 150px;
   left: 50%;
-  transform: translate(-50%, -50%);
+    transform: translateX(-50%);
 
   &__text {
     width: 100%;
@@ -34,6 +34,7 @@
     max-width: 780px;
     position: absolute;
     top: 195px;
+
 
     &__text {
       h1 {

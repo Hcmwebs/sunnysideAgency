@@ -269,9 +269,9 @@ ul {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 25%;
+  top: 150px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 }
 .hero__text {
   width: 100%;
