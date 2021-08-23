@@ -2,6 +2,7 @@
 
 .hero {
   width: 100%;
+  max-width:$mobileScreen;
   min-height: 100px;
   @include flex(column, center, center);
   position: absolute;
@@ -31,7 +32,7 @@
 
 @media (min-width: $largeScreen) {
   .hero {
-    max-width: 780px;
+    max-width: $largeScreen;
     position: absolute;
     top: 195px;
 

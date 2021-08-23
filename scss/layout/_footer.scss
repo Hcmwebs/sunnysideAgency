@@ -3,6 +3,7 @@
 
 .footer {
   width: 100%;
+  max-width:$mobileScreen;
   min-height: 350px;
   background-color: $footer;
   @include grid(center);
@@ -57,5 +58,10 @@
       }
 
     }
+  }
+}
+@media(min-width: $largeScreen){
+  .footer{
+    max-width:$largeScreen;
   }
 }

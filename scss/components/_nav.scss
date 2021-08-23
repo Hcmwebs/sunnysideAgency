@@ -4,7 +4,7 @@
 
 .nav {
   width: 100%;
-  max-width: 100%;
+  max-width: $mobileScreen;
   padding: 1.6rem 1.3rem;
   position: fixed;
   z-index: 9;
@@ -35,10 +35,12 @@
     right: -100%;
     cursor: pointer;
     background-color: $white;
+    opacity: 0;
     transition: $transition-2;
 
     &.open {
       right: 30px;
+      opacity: 1;
     }
 
     &::before {
@@ -98,7 +100,7 @@
 
 @media (min-width: $largeScreen) {
   .nav{
-    max-width:$maxWidth;
+    max-width:$largeScreen;
 
     .hamburger {
       display: none;
@@ -109,6 +111,7 @@
       flex-direction: row;
       right: 30px;
       top: 0;
+      opacity: 1;
       background-color: transparent;
 
       &::before {

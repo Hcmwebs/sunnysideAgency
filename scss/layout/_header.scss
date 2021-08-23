@@ -3,7 +3,7 @@
 
 .header {
   width: 100%;
-  max-width: 1440px;
+  max-width: $mobileScreen;
   @include grid(center);
 
   .imgContainer {
@@ -15,5 +15,9 @@
     }
   }
 }
-
+@media(min-width: $largeScreen){
+  .header{
+    max-width:$largeScreen;
+  }
+}
 
