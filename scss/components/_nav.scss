@@ -4,7 +4,7 @@
 
 .nav {
   width: 100%;
-  max-width: 375px;
+  max-width: 100%;
   padding: 1.6rem 1.3rem;
   position: fixed;
   z-index: 9;
@@ -98,7 +98,7 @@
 
 @media (min-width: $largeScreen) {
   .nav{
-    max-width:$fixedWidth;
+    max-width:$maxWidth;
 
     .hamburger {
       display: none;

@@ -145,7 +145,7 @@ ul {
 /* nav */
 .nav {
   width: 100%;
-  max-width: 375px;
+  max-width: 100%;
   padding: 1.6rem 1.3rem;
   position: fixed;
   z-index: 9;
@@ -237,7 +237,7 @@ ul {
 
 @media (min-width: 1440px) {
   .nav {
-    max-width: 600px;
+    max-width: 1440px;
   }
   .nav .hamburger {
     display: none;
