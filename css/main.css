@@ -580,11 +580,9 @@ ul {
   width: 100%;
   display: grid;
   place-items: center;
-  gap: 2.5rem;
 }
 .main .section {
   width: 100%;
-  background-color: salmon;
 }
 
 .footer {

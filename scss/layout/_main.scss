@@ -5,11 +5,9 @@
 .main {
   width: 100%;
   @include grid(center);
-  gap:2.5rem;
 
 
   .section {
     width: 100%;
-    background-color: salmon;
   }
 }
