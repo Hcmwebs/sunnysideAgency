@@ -569,19 +569,11 @@ ul {
   height: 375px;
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(188px, 1fr));
-}
-.gallery .img {
-  width: 187px;
-  height: 187px;
+  grid-template-columns: repeat(auto-fit, minmax(187px, 1fr));
 }
 
 @media (min-width: 1440px) {
   .gallery {
-    height: 447px;
-  }
-  .gallery .img {
-    width: 360px;
     height: 447px;
   }
 }

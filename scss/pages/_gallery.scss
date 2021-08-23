@@ -5,23 +5,12 @@
   width: 100%;
   height: 375px;
   @include grid(center);
-  grid-template-columns: repeat(auto-fit, minmax(188px, 1fr));
-
-  .img{
-    width: 187px;
-    height: 187px;
-  }
+  grid-template-columns: repeat(auto-fit, minmax(187px, 1fr));
 }
 
 
 @media(min-width: $largeScreen){
   .gallery{
     height: 447px;
-
-
-    .img{
-      width: 360px;
-      height: 447px;
-    }
   }
 }
