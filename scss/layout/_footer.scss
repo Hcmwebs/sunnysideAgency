@@ -13,7 +13,7 @@
     min-height: 206px;
     @include grid(center);
 
-    nav{
+    .nav{
       max-width:300px;
       @include grid(center);
 
