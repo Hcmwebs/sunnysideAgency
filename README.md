@@ -30,9 +30,8 @@ One can use any tools you like to help you complete the challenge. So if you've 
 
 ### Screenshot
 
-![Large screens Screenshots](images/screenshots/Largescreens.png)
-![Small screens Screenshots](images/screenshots/smallscreens.png)
-![Small screens with navbar open Screenshots](images/screenshots/smallscreens-navbaropen.png)
+![Final Screenshots](images/screenshots/Largescreens.png)
+
 
 This is a screenshot for a laptop size screen,  mobile screen as well as mobile screen with navbar open  respectively . I had issues setting up the background image on different screens but I eventually came up with this.
 
