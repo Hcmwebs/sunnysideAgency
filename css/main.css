@@ -83,7 +83,7 @@ ul {
   letter-spacing: 1px;
   padding: 0.375rem 0.75rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  transition: 0.1s ease-in-out all;
+  transition: all 0.1s ease-in-out;
   text-transform: capitalize;
   display: inline-block;
   /*block class is good with forms*/
@@ -136,7 +136,7 @@ ul {
 .attribution a {
   font-weight: 900;
   color: #3e52a3;
-  transition: 0.8s ease-in-out all;
+  transition: all 0.8s ease-in-out;
 }
 .attribution a:hover {
   color: white;
@@ -159,7 +159,7 @@ ul {
   min-height: 1rem;
   color: white;
   cursor: pointer;
-  transition: 0.8s ease-in-out all;
+  transition: all 0.8s ease-in-out;
 }
 .nav .hamburger.open {
   opacity: 0.4;
@@ -181,7 +181,7 @@ ul {
   cursor: pointer;
   background-color: white;
   opacity: 0;
-  transition: 0.8s ease-in-out all;
+  transition: all 0.8s ease-in-out;
 }
 .nav .navbar.open {
   right: 30px;
@@ -212,7 +212,7 @@ ul {
   text-align: center;
   color: #818498;
   padding: 0.375rem 0.75rem;
-  transition: 0.1s ease-in-out all;
+  transition: all 0.1s ease-in-out;
 }
 .nav .navbar li a:hover {
   font-family: "Fraunces", serif;
@@ -628,7 +628,7 @@ ul {
 }
 .footer__container .nav ul li a {
   color: #25564b;
-  transition: 0.8s ease-in-out all;
+  transition: all 0.8s ease-in-out;
 }
 .footer__container .nav ul li a:hover {
   color: white;
@@ -645,7 +645,7 @@ ul {
   height: 25px;
   cursor: pointer;
   color: #25564b;
-  transition: 0.8s ease-in-out all;
+  transition: all 0.8s ease-in-out;
 }
 .footer__container .socialLinks .img:hover {
   color: white;
