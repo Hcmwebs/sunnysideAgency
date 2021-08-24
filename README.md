@@ -57,7 +57,7 @@ This is a screenshot for a laptop size screen,  mobile screen as well as mobile 
 
 - I learnt more about picture element and had a lot of fun when all seemed to work well.
 
--I am happy with my evolution with SVG images.
+- I am happy with my evolution with SVG images.
 
 - I am getting more deeper into sass.
 
