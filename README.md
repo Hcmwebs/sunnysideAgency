@@ -1,4 +1,4 @@
- Frontend Mentor: Fylo Dark Theme
+ Frontend Mentor: SunnySide Agency Landing Page
 
 This is my solution to the [SunnySide Agency Landing Page Project](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef/hub/sunnyside-agency-landing-page-RWNxnL7EG). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -30,14 +30,16 @@ One can use any tools you like to help you complete the challenge. So if you've 
 
 ### Screenshot
 
-![Final Screenshots]()
+![Large screens Screenshots](images/screenshots/Largescreens.png)
+![Small screens Screenshots](images/screenshots/smallscreens.png)
+![Small screens with navbar open Screenshots](images/screenshots/smallscreens-navbaropen.png)
 
-This is a screenshot for a laptop size screen, 1440 * 900. I had issues setting up the background curvy image on different screens but I eventually came up with this.
+This is a screenshot for a laptop size screen,  mobile screen as well as mobile screen with navbar open  respectively . I had issues setting up the background image on different screens but I eventually came up with this.
 
 ### Links
 
-- Solution URL: [Here's a link to my solution on Frontend Mentor]().
-- Live Site URL: [And here's the page live in action]()
+- Solution URL: [Here's a link to my solution on Frontend Mentor](https://www.frontendmentor.io/solutions/using-both-flexbox-and-grid-layouts-styled-with-sass-6iWudO1w1).
+- Live Site URL: [And here's the page live in action](https://sunnyside-agency-1u3o8zs4f-hcmwebs.vercel.app/)
 
 ### Built with
 
@@ -48,11 +50,16 @@ This is a screenshot for a laptop size screen, 1440 * 900. I had issues setting 
 - [Sass](https://sass-lang.com/dart-sass)
 
 ### What challenged me!
-- I realized, I have a lot to learn about pseudo elements and the **background images**
+- I decided to use picture element on all the **images** something I had never done before.
+
+-SVG images are always tricky to me.
 ### What I learned
 
-- I got deeper into the background images, their sizing as well as their positioning. I still have a long way to go but am really happy with the progress.
-- I am also glad that I am getting more comfortable with sass.
+- I learnt more about picture element and had a lot of fun when all seemed to work well.
+
+-I am happy with my evolution with SVG images.
+
+- I am getting more deeper into sass.
 
 - It is always fun to work with both grid and flex layouts.
 
@@ -61,6 +68,7 @@ This is a screenshot for a laptop size screen, 1440 * 900. I had issues setting 
 - [Google](https://www.google.com) - Definately **THE** most valuable tool in a web developer's **TOOLBOX**, frontend or backend. Any search engine would do, though.
 - [CSS Tricks](https://css-tricks.com/) - This is one of my go-to platforms. It is full of articles that are clearly and broadly explained by people with vast knowledge of CSS.
 
+- [Stack overflow](https://stackoverflow.com/) - A place where all the developer questions have already been answered by fellow developers.
 
 
 ## Author
